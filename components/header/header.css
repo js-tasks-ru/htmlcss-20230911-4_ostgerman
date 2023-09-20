@@ -1,0 +1,16 @@
+.header {
+  background: var(--white);
+  height: 237px;
+}
+
+.header__title {
+  /* TODO */
+  margin: 96px 0px 0px 160px;
+
+  color: var(--black);
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+}
