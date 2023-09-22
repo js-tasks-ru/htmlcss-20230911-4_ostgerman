@@ -24,6 +24,11 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+    
+    --background: var(--white);
+    --border: var(--grey-3);
+    --caption: var(--grey-4);
+    --text: var(--black);
 }
 
 * {
