@@ -5,10 +5,17 @@
   align-items: center;
 }
 
-.footer__about {
-  
-  margin-top: 64px;
+.footer__inner {  
+  padding: 71px 0 136px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
 
+.footer__about {  
+  margin: 0;
   font-family: Inter;
   font-size: 38px;
   font-style: normal;
@@ -17,11 +24,8 @@
 }
 
 .footer__description {
-
-  margin-bottom: 136px;
-
   max-width: 640px;
-
+  margin: 0 auto;
   color: var(--black);
   text-align: center;
   /* p */
