@@ -3,6 +3,7 @@
   border: 1px solid var(--border);
   border-radius: 8px;
   margin-bottom: 8px;
+  padding: 24px 32px;
 }
 
 .accordion__item:last-child {
@@ -15,23 +16,19 @@
 
 .accordion__summary {
   list-style: none;
-  padding: 24px 16px 24px 32px;
   color: var(--caption);
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;  
+  line-height: 24px;
 }
-
-.accordion__item[open] .accordion__summary { 
-  padding-bottom: 0px;  
-}
-
 .accordion__content {
-  margin: 0;
-  padding: 16px 16px 0px 32px;
+  margin: 16px 0 0;
+}
 
+.accordion__text {
+  margin: 0 0 8px;
   color: var(--text);
   font-family: Inter;
   font-size: 16px;
@@ -39,8 +36,4 @@
   font-weight: 400;
   line-height: 24px;
   /* 150% */
-}
-
-.accordion__content:last-child {
-  padding-bottom: 32px;
 }
