@@ -1,0 +1,112 @@
+.skeleton {  
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 16px;
+
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+}
+
+.skeleton__row {
+  width: 100%;
+  display: flex;  
+  flex-direction: row;  
+  gap: 16px;
+}
+
+.skeleton__col {  
+  display: flex;
+  flex-shrink: 1;  
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+
+.skeleton__col_grow {    
+  flex-grow: 1;      
+}
+
+.skeleton__circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--grey-2);
+}
+
+.skeleton__line {  
+  height: 20px;  
+  background: var(--grey-2);
+}
+
+.skeleton__line_10 {  
+  width: 10%
+}
+
+.skeleton__line_15 {  
+  width: 15%
+}
+
+.skeleton__line_20 {  
+  width: 20%
+}
+
+.skeleton__line_25 {  
+  width: 25%
+}
+
+.skeleton__line_30 {  
+  width: 30%
+}
+
+.skeleton__line_35 {  
+  width: 35%
+}
+
+.skeleton__line_40 {  
+  width: 40%
+}
+
+.skeleton__line_45 {  
+  width: 45%
+}
+
+.skeleton__line_50 {  
+  width: 50%
+}
+
+.skeleton__line_55 {  
+  width: 55%
+}
+
+.skeleton__line_60 {  
+  width: 60%
+}
+
+.skeleton__line_65 {  
+  width: 65%
+}
+
+.skeleton__line_70 {  
+  width: 70%
+}
+
+.skeleton__line_75 {  
+  width: 75%
+}
+
+.skeleton__line_80 {  
+  width: 80%
+}
+
+.skeleton__line_85 {  
+  width: 85%
+}
+
+.skeleton__line_90 {  
+  width: 90%
+}
+
+.skeleton__line_95 {  
+  width: 95%
+}
