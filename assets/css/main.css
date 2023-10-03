@@ -38,6 +38,12 @@
   --alternate-border-hover: var(--black);
   --alternate-text: var(--grey-4);
 
+
+  --background: var(--white);
+  --border: var(--grey-3);
+  --caption: var(--grey-4);
+  --text: var(--black);
+  
   --container-width: 1120px;
 }
 
@@ -45,7 +51,7 @@
   box-sizing: border-box;
 }
 
-body {  
+body {
   font-family: 'Roboto', sans-serif;
 }
 

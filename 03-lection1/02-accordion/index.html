@@ -1,18 +1,72 @@
 <!DOCTYPE html>
 <!-- Страница с аккордеоном -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
-        </details>
-    </body>
+
+<head>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="./container.css">
+  <link rel="stylesheet" href="./accordion.css">
+</head>
+
+<body>
+  <main class="container">
+    <section class="accordion">
+      <details class="accordion__item" open>
+        <summary class="accordion__summary">
+          The &lt;summary&gt; tag defines a visible heading for the &lt;details&gt; element
+        </summary>
+        <div class="accordion__content">
+          <p class="accordion__text">
+            The &lt;summary&gt; HTML element specifies a summary, caption, or legend for a &lt;details&gt; element's
+            disclosure box. Clicking the &lt;summary&gt; element toggles the state of the parent &lt;details&gt; element
+            open
+            and closed. The &lt;summary&gt; element's contents can be any heading content, plain text, or HTML that can
+            be
+            used within a paragraph. A &lt;summary&gt; element may only be used as the first child of a &lt;details&gt;
+            element. When the user clicks on the summary, the parent &lt;details&gt; element is toggled open or closed,
+            and
+            then a toggle event is sent to the &lt;details&gt; element, which can be used to let you know when this
+            state
+            change occurs.
+          </p>
+        </div>
+      </details>
+      <details class="accordion__item">
+        <summary class="accordion__summary">
+          Чтобы легче вставать по утрам, нужен лишь простой советский...
+        </summary>
+        <div class="accordion__content">
+          <p class="accordion__text">
+            Первое и очевидное правило, по словам врача, заключается в том, что нужно достаточное время спать ночью,
+            чтобы
+            легко вставать по утрам. «Если вы будете высыпаться до намеченного времени пробуждения, то подъем перестанет
+            быть проблемой», — заверил он.
+          </p>
+          <p class="accordion__text">
+            Осенью и зимой утренние пробуждения могут стать особенно выраженной проблемой. Причина в том, что в холодное
+            время года темно по утрам, а в темноте активно происходит секреция гормона сна мелатонина. Многие замечали:
+            летом вставать в разы легче. Это потому, что свет даже через закрытые веки воздействует на сетчатку, подавая
+            сигнал к прекращению выработки мелатонина.
+          </p>
+        </div>
+      </details>
+      <details class="accordion__item">
+        <summary class="accordion__summary">
+          Жареный суп (рецепт от бати)
+        </summary>
+        <div class="accordion__content">
+          <p class="accordion__text">
+            Очень интересный и вкусный суп. «Жареным» его назвали потому, что все ингредиенты супа: картофель, морковь,
+            лук, муку перед добавлением в суп обжаривают. В результате таких манипуляций морковь и лук отдают все свои
+            ароматы в масло, и суп с таким маслом становится очень ароматным. А обжаренный картофель приобретает в нём
+            особенный вкус. Отлично дополняет такой суп заправка из сметаны и муки — суп становится наваристым, густым,
+            вкусным!
+          </p>
+        </div>
+      </details>
+    </section>
+  </main>
+
+</body>
+
 </html>
