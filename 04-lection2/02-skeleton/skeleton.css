@@ -30,7 +30,7 @@
 .skeleton__circle {
   width: 64px;
   height: 64px;
-  border-radius: 9999px;
+  border-radius: 50%;
   background: var(--grey-2);
 }
 
