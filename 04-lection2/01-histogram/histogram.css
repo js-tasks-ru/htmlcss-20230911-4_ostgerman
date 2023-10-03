@@ -1,6 +1,6 @@
 .histogram {
   margin: 0;
-  padding: 16px 24px;
+  padding: 16px 24px 24px;
   border: 1px solid var(--alternate-border);
   border-radius: 8px;
   background: var(--white);
@@ -59,7 +59,7 @@
 }
 
 .histogram__figure {
-  margin-top: 16px;
+  margin-top: 39px;
   display: flex;
   align-items: flex-end;
   gap: 1px;
