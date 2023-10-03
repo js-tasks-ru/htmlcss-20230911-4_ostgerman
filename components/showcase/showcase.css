@@ -1,6 +1,11 @@
 .showcase {
-  /* TODO */
-  height: 1036px; 
-
   background: #F9FAFC;
+  padding: 65px 0;
+  flex-grow: 1;
+}
+
+.showcase__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
