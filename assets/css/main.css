@@ -6,6 +6,8 @@
 @import '../../components/header/header.css';
 @import '../../components/footer/footer.css';
 @import '../../components/showcase/showcase.css';
+@import '../../components/container/container.css';
+@import '../../components/card/card.css';
 
 :root {
   --white: #ffffff;
@@ -36,11 +38,13 @@
   --alternate-border-hover: var(--black);
   --alternate-text: var(--grey-4);
 
-    
-    --background: var(--white);
-    --border: var(--grey-3);
-    --caption: var(--grey-4);
-    --text: var(--black);
+
+  --background: var(--white);
+  --border: var(--grey-3);
+  --caption: var(--grey-4);
+  --text: var(--black);
+  
+  --container-width: 1120px;
 }
 
 * {
@@ -49,4 +53,10 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100vh;
 }
