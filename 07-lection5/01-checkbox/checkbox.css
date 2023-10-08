@@ -1,5 +1,6 @@
 .checkbox {
   display: inline-flex;
+  position: relative;
 }
 
 .checkbox__state {
