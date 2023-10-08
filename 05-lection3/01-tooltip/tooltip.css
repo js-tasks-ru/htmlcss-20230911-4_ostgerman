@@ -3,7 +3,10 @@
   position: relative;
 }
 
-.tooltip__trigger {}
+.tooltip__trigger {
+  width: 24px;
+  height: 24px;
+}
 
 .tooltip__popup {
   display: none;
