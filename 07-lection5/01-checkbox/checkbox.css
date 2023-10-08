@@ -27,6 +27,7 @@
 
 .checkbox__icon {
   display: none;
+  color: var(--white);
 }
 
 .checkbox__label {
