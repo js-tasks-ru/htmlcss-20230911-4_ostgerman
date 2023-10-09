@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <!-- Страница радио -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./radio.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="./radio.css">
+  <style>
+    .radio-showcase {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="radio-showcase" class="radio-showcase">
+    <template id="radio-template">
+      <label class="radio">
+        <input class="radio__input" type="radio" />
+        <div class="radio__state">
+          <div class="radio__control">
+          <div class="radio__icon"></div>            
+          </div>
+          <div class="radio__label">Default</div>
+        </div>
+      </label>
+    </template>
+  </div>
+
+  <script>
+    addEventListener("DOMContentLoaded", (event) => {
+      const cbTemplate = document.querySelector("#radio-template");
+      const showcase = document.querySelector("#radio-showcase");
+
+      for (let i = 0; i < 2; i++) {
+        const cb = cbTemplate.content.cloneNode(true);
+        const cbInput = cb.querySelector(".radio__input");
+        const cbLabel = cb.querySelector(".radio__label");
+        cbInput.disabled = true;
+        cbInput.checked = i % 2;
+        cbInput.name = 'showcase';
+        cbLabel.innerText = `${cbInput.checked ? "C" : "Unc"}hecked, ${cbInput.disabled ? "dis" : "en"}abled`;
+        showcase.appendChild(cb);
+      }
+
+      [1, 2].forEach(grp => {
+        for (let i = 0; i < 4; i++) {
+          const cb = cbTemplate.content.cloneNode(true);
+          const cbInput = cb.querySelector(".radio__input");
+          const cbLabel = cb.querySelector(".radio__label");
+          cbInput.checked = i == 0;
+          cbInput.name = `group${grp}`;
+          cbLabel.innerText = `Group ${grp}`;
+          showcase.appendChild(cb);
+        }
+      });
+    });
+  </script>
+</body>
+
 </html>
