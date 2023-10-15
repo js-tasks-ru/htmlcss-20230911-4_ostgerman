@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="./input.css">
+  <style>
+    .input-showcase {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="input-showcase" class="input-showcase">
+    <template id="input-template">
+      <label class="input">
+        <div class="input__label">Default</div>
+        <div class="input__container">
+          <input class="input__control" type="text" placeholder="asdasd" />
+          <div class="input__icon-container">
+            <svg class="input__icon-success">
+              <use href="../../assets/images/icons.svg#check-circle" />
+            </svg>
+            <svg class="input__icon-error">
+              <use href="../../assets/images/icons.svg#error" />
+            </svg>
+          </div>
+        </div>
+      </label>
+    </template>
+  </div>
+
+  <script>
+    addEventListener("DOMContentLoaded", (event) => {
+      const cbTemplate = document.querySelector("#input-template");
+      const showcase = document.querySelector("#input-showcase");
+
+      [false, true].forEach((disabled) => {
+        [null, "input_invalid", "input_success"].forEach((modifier) => {
+          const node = cbTemplate.content.cloneNode(true);
+          const control = node.querySelector(".input");
+          const input = node.querySelector(".input__control");
+          const label = node.querySelector(".input__label");
+          control.classList.add(modifier);
+          input.disabled = disabled;
+          label.innerText = `${modifier === null ? "" : modifier + ","} ${input.disabled ? "dis" : "en"}abled`;
+          showcase.appendChild(node);
+        });
+      });
+    });
+  </script>
+</body>
+
 </html>
