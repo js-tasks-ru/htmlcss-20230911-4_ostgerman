@@ -34,8 +34,7 @@
   margin-bottom: 16px;
 }
 
-.calendar__date {  
-  height: 36px;
+.calendar__date {    
   color: #334D6E;
   font-size: 16px;
   font-family: Source Sans 3;
@@ -45,6 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 1 / 1;
 }
 
 .calendar__date-text {  
