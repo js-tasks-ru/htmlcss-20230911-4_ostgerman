@@ -34,7 +34,7 @@
   position: absolute;
   left: 2px;
   background: var(--grey-2);
-  transition: transform .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .toggler__label {
