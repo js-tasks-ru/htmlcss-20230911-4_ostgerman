@@ -42,3 +42,7 @@
 .header__menu-item_active {
   color: var(--black);
 }
+
+.header_template {
+  padding: 24px 0 60px;
+}

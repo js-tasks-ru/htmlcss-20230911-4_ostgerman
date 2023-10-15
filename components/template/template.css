@@ -12,10 +12,6 @@
   grid-area: header;
 }
 
-.header_template {
-  padding: 24px 0 60px;
-}
-
 .template__main {
   grid-area: main;
   overflow: auto;      
@@ -35,19 +31,4 @@
 
 .template__footer {
   grid-area: footer;
-}
-
-.footer_template {
-  padding: 56px 0;
-}
-
-.footer_template .footer__about {
-  color: var(--grey-3);
-  font-family: Inter;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: 0.48px;
-  text-transform: uppercase;
 }
