@@ -23,12 +23,8 @@
   font-family: Inter;
   font-weight: 400;
   line-height: 26px;
-  word-wrap: break-word
-}
-
-.input__icon {
-  /* display: none; */
-  color: var(--white);
+  word-wrap: break-word;
+  transition: border-color .2s ease-in;
 }
 
 .input__label {
@@ -39,7 +35,7 @@
   text-transform: uppercase;
   line-height: 18px;
   letter-spacing: 0.48px;
-  word-wrap: break-word
+  word-wrap: break-word;
 }
 
 .input__control:focus {
