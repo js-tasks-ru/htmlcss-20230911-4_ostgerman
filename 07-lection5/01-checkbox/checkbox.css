@@ -1,3 +1,16 @@
+@keyframes kf-checkbox-overlay {
+  from {        
+    opacity: 1;
+  }
+
+  to {
+    width: 56px;    
+    height: 56px; 
+    border-radius: 8px;   
+    opacity: 0;
+  }
+}
+
 .checkbox {
   display: inline-flex;
   position: relative;
@@ -25,6 +38,18 @@
   justify-content: center;
 }
 
+.checkbox__overlay {  
+  width: 28px;
+  height: 28px;  
+  opacity: 0;
+  position: absolute;  
+  border-radius: 4px;
+  background: var(--grey-4);  
+  /* animation-fill-mode: both; */
+  animation-duration: .2s;
+  animation-timing-function: ease-out;
+}
+
 .checkbox__icon {
   display: none;
   color: var(--white);
@@ -37,6 +62,10 @@
   font-weight: 400;
   line-height: 24px;
   word-wrap: break-word;
+}
+
+.checkbox__input:checked~.checkbox__state .checkbox__overlay {
+  animation-name: kf-checkbox-overlay;  
 }
 
 .checkbox__input:checked~.checkbox__state .checkbox__control {
@@ -54,9 +83,9 @@
 }
 
 .checkbox__input:disabled~.checkbox__state .checkbox__label {
-  color: var(--grey-2);  
+  color: var(--grey-2);
 }
 
 .checkbox__input:focus~.checkbox__state .checkbox__label {
-  text-decoration: underline  ;
+  text-decoration: underline;
 }
