@@ -19,7 +19,9 @@
 
   min-width: 182px;
   height: 48px;
-  padding: 15px 15px 14px;  
+  padding: 15px 15px 14px;
+
+  transition: all .1s ease-in;
 }
 
 .button[disabled] {
@@ -53,4 +55,8 @@
 
 .button_alternate:hover:not(.button_disabled) {  
   border-color: var(--alternate-border-hover);
+}
+
+.button:hover {
+  transform: translateY(2.5%);
 }
