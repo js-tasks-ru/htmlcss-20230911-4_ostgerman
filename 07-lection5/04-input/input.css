@@ -43,17 +43,12 @@
   border: 1px solid var(--blue);
 }
 
-.input.input_invalid .input__control:focus {
+.input_invalid .input__control:focus {
   border: 1px solid var(--error);
 }
 
 .input__control::placeholder {
-  color: var(--grey-2);
-  font-size: 20px;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 26px;
-  word-wrap: break-word;
+  color: var(--grey-2);  
 }
 
 .input__icon-container {
@@ -64,23 +59,22 @@
   display: inline-flex;
 }
 
-.input__icon-success {
+.input__icon {
   width: 24px;
   height: 24px;
-  font-size: 24px;
-  color: var(--success);
+  font-size: 24px;  
   display: none;
 }
 
-.input__icon-error {
-  width: 24px;
-  height: 24px;
-  font-size: 24px;
-  color: var(--error);
-  display: none;
+.input__icon_success {  
+  color: var(--success);  
 }
 
-.input.input_invalid .input__icon-error {
+.input__icon_error {  
+  color: var(--error);  
+}
+
+.input_invalid .input__icon_error {
   display: block;
 }
 
@@ -88,7 +82,7 @@
   color: var(--grey-2);
 }
 
-.input.input_success .input__icon-success {
+.input_success .input__icon_success {
   display: block;
 }
 
