@@ -4,9 +4,7 @@
   }
 
   to {
-    width: 56px;    
-    height: 56px; 
-    border-radius: 8px;   
+    transform: scale(2);
     opacity: 0;
   }
 }
