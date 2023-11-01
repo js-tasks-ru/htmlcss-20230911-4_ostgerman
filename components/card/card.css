@@ -48,7 +48,7 @@
   word-wrap: break-word
 }
 
-.card.card_vertical .card__content {
+.card_vertical .card__content {
   flex-direction: column; 
   gap: 18px;
   align-items: center; 
