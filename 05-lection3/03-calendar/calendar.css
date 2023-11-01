@@ -34,13 +34,7 @@
   margin-bottom: 16px;
 }
 
-.calendar__date {    
-  color: #334D6E;
-  font-size: 16px;
-  font-family: Source Sans 3;
-  font-weight: 400;
-  line-height: 20px;
-  word-wrap: break-word;
+.calendar__date {   
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,4 +86,27 @@
 
 .calendar__date_start-7 {
   grid-column: 7;
+}
+
+.calendar.calendar_showcase {
+    min-width: 200px;
+    grid-template-columns: repeat(7, minmax(10px, 1fr));
+    padding: 18px 16px 12px;
+}
+
+.calendar.calendar_showcase .calendar__month {  
+  font-size: 16px;  
+  line-height: 18px; 
+  margin-bottom: 14px;
+}
+
+.calendar.calendar_showcase .calendar__date-text {    
+  font-size: 12px;  
+  line-height: 14px;
+}
+
+.calendar.calendar_showcase .calendar__day {  
+  font-size: 12px;  
+  line-height: 14px;  
+  margin-bottom: 12px;
 }

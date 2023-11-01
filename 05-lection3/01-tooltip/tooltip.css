@@ -43,3 +43,15 @@
 .tooltip__trigger:hover~.tooltip__popup {
   display: block;
 }
+
+.tooltip.tooltip_showcase .tooltip__popup {
+  display: block;
+}
+
+.tooltip.tooltip_showcase .tooltip__trigger:hover~.tooltip__popup {
+  display: none;
+}
+
+.tooltip.tooltip_showcase {
+  transform: translateY(50px);
+}
