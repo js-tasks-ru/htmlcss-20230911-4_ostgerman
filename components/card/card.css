@@ -22,12 +22,28 @@
   flex-direction: column;
 }
 
-.card__content {
+.card__content {  
   flex: 1;
   display: flex;
   padding: 0 11px;
   align-items: center;
   justify-content: center;  
+}
+
+
+.card__content-wrapper {
+  flex: 0;
+}
+
+.card__content-wrapper_full-width {
+  flex: 1;  
+}
+
+.card__content-wrapper_vertical {
+  display: flex;
+  flex-direction: column; 
+  gap: 18px;
+  align-items: center; 
 }
 
 .card__title {
@@ -46,12 +62,6 @@
   font-weight: 400;
   line-height: 22px;
   word-wrap: break-word
-}
-
-.card_vertical .card__content {
-  flex-direction: column; 
-  gap: 18px;
-  align-items: center; 
 }
 
 @media only screen and (min-width: 768px) {

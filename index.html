@@ -37,14 +37,16 @@
         <article class="showcase__inner">
           <div class="card">
             <div class="card__content">
-              <div class="tooltip tooltip_active tooltip_showcase">
-                <svg class="tooltip__trigger">
-                  <use href="../../assets/images/icons.svg#question-mark" />
-                </svg>
-                <div class="tooltip__popup">
-                  <span class="tooltip__text">
-                    Helper text
-                  </span>
+              <div class="card__content-wrapper">
+                <div class="tooltip tooltip_active tooltip_showcase">
+                  <svg class="tooltip__trigger">
+                    <use href="../../assets/images/icons.svg#question-mark" />
+                  </svg>
+                  <div class="tooltip__popup">
+                    <span class="tooltip__text">
+                      Helper text
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -55,20 +57,25 @@
           </div>
           <div class="card">
             <div class="card__content">
-              <button id="modal-open" class="button button_primary">Open modal</button>
-              <div id="modal" class="modal">
-                <div class="modal__popup">
-                  <svg id="modal-close" class="modal__close">
-                    <use href="../../assets/images/icons.svg#close" />
-                  </svg>
-                  <h3 class="modal__title">Modal title</h3>
-                  <p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                    officia
-                    consequat duis enim velit mollitAmet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                    sint. Velit
-                    officia consequat duis enim velit mollitAmet minim mollit non deserunt ullamco est sit aliqua dolor
-                    do amet
-                    sint.</p>
+              <div class="card__content-wrapper">
+                <button id="modal-open" class="button button_primary">Open modal</button>
+                <div id="modal" class="modal">
+                  <div class="modal__popup">
+                    <svg id="modal-close" class="modal__close">
+                      <use href="../../assets/images/icons.svg#close" />
+                    </svg>
+                    <h3 class="modal__title">Modal title</h3>
+                    <p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                      Velit
+                      officia
+                      consequat duis enim velit mollitAmet minim mollit non deserunt ullamco est sit aliqua dolor do
+                      amet
+                      sint. Velit
+                      officia consequat duis enim velit mollitAmet minim mollit non deserunt ullamco est sit aliqua
+                      dolor
+                      do amet
+                      sint.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -79,45 +86,47 @@
           </div>
           <a class="card">
             <div class="card__content">
-              <div class="histogram">
-                <div class="histogram__legend">
-                  <div class="histogram__caption">
-                    <span class="histogram__caption-text">Total orders</span>
-                    <span class="historgram__caption-value">50254</span>
+              <div class="card__content-wrapper card__content-wrapper_full-width">
+                <div class="histogram">
+                  <div class="histogram__legend">
+                    <div class="histogram__caption">
+                      <span class="histogram__caption-text">Total orders</span>
+                      <span class="historgram__caption-value">50254</span>
+                    </div>
+                    <span class="histogram__link" href="#">View all</span>
                   </div>
-                  <span class="histogram__link" href="#">View all</span>
-                </div>
-                <div class="histogram__figure">
-                  <div class="histogram__bar histogram__bar_100"></div>
-                  <div class="histogram__bar histogram__bar_15"></div>
-                  <div class="histogram__bar histogram__bar_80"></div>
-                  <div class="histogram__bar histogram__bar_65"></div>
-                  <div class="histogram__bar histogram__bar_90"></div>
-                  <div class="histogram__bar histogram__bar_10"></div>
-                  <div class="histogram__bar histogram__bar_20"></div>
-                  <div class="histogram__bar histogram__bar_10"></div>
-                  <div class="histogram__bar histogram__bar_45"></div>
-                  <div class="histogram__bar histogram__bar_15"></div>
-                  <div class="histogram__bar histogram__bar_60"></div>
-                  <div class="histogram__bar histogram__bar_100"></div>
-                  <div class="histogram__bar histogram__bar_95"></div>
-                  <div class="histogram__bar histogram__bar_45"></div>
-                  <div class="histogram__bar histogram__bar_60"></div>
-                  <div class="histogram__bar histogram__bar_70"></div>
-                  <div class="histogram__bar histogram__bar_75"></div>
-                  <div class="histogram__bar histogram__bar_20"></div>
-                  <div class="histogram__bar histogram__bar_25"></div>
-                  <div class="histogram__bar histogram__bar_30"></div>
-                  <div class="histogram__bar histogram__bar_75"></div>
-                  <div class="histogram__bar histogram__bar_80"></div>
-                  <div class="histogram__bar histogram__bar_10"></div>
-                  <div class="histogram__bar histogram__bar_100"></div>
-                  <div class="histogram__bar histogram__bar_25"></div>
-                  <div class="histogram__bar histogram__bar_10"></div>
-                  <div class="histogram__bar histogram__bar_55"></div>
-                  <div class="histogram__bar histogram__bar_15"></div>
-                  <div class="histogram__bar histogram__bar_90"></div>
-                  <div class="histogram__bar histogram__bar_10"></div>
+                  <div class="histogram__figure">
+                    <div class="histogram__bar histogram__bar_100"></div>
+                    <div class="histogram__bar histogram__bar_15"></div>
+                    <div class="histogram__bar histogram__bar_80"></div>
+                    <div class="histogram__bar histogram__bar_65"></div>
+                    <div class="histogram__bar histogram__bar_90"></div>
+                    <div class="histogram__bar histogram__bar_10"></div>
+                    <div class="histogram__bar histogram__bar_20"></div>
+                    <div class="histogram__bar histogram__bar_10"></div>
+                    <div class="histogram__bar histogram__bar_45"></div>
+                    <div class="histogram__bar histogram__bar_15"></div>
+                    <div class="histogram__bar histogram__bar_60"></div>
+                    <div class="histogram__bar histogram__bar_100"></div>
+                    <div class="histogram__bar histogram__bar_95"></div>
+                    <div class="histogram__bar histogram__bar_45"></div>
+                    <div class="histogram__bar histogram__bar_60"></div>
+                    <div class="histogram__bar histogram__bar_70"></div>
+                    <div class="histogram__bar histogram__bar_75"></div>
+                    <div class="histogram__bar histogram__bar_20"></div>
+                    <div class="histogram__bar histogram__bar_25"></div>
+                    <div class="histogram__bar histogram__bar_30"></div>
+                    <div class="histogram__bar histogram__bar_75"></div>
+                    <div class="histogram__bar histogram__bar_80"></div>
+                    <div class="histogram__bar histogram__bar_10"></div>
+                    <div class="histogram__bar histogram__bar_100"></div>
+                    <div class="histogram__bar histogram__bar_25"></div>
+                    <div class="histogram__bar histogram__bar_10"></div>
+                    <div class="histogram__bar histogram__bar_55"></div>
+                    <div class="histogram__bar histogram__bar_15"></div>
+                    <div class="histogram__bar histogram__bar_90"></div>
+                    <div class="histogram__bar histogram__bar_10"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -128,10 +137,12 @@
           </a>
           <div class="card">
             <div class="card__content">
-              <div class="avatar-showcase">
-                <div class="avatar">
-                  <img class="avatar__image" src="https://xsgames.co/randomusers/avatar.php?g=male"
-                    alt="Random avatar" />
+              <div class="card__content-wrapper">
+                <div class="avatar-showcase">
+                  <div class="avatar">
+                    <img class="avatar__image" src="https://xsgames.co/randomusers/avatar.php?g=male"
+                      alt="Random avatar" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -142,35 +153,37 @@
           </div>
           <div class="card card_vertical">
             <div class="card__content">
-              <label class="radio">
-                <input class="radio__input" type="radio" name="radio1" checked />
-                <div class="radio__state">
-                  <div class="radio__control">
-                    <div class="radio__icon"></div>
+              <div class="card__content-wrapper card__content-wrapper_vertical">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="radio1" checked />
+                  <div class="radio__state">
+                    <div class="radio__control">
+                      <div class="radio__icon"></div>
+                    </div>
+                    <div class="radio__label">Radio 1</div>
                   </div>
-                  <div class="radio__label">Radio 1</div>
-                </div>
-              </label>
-              <label class="radio">
-                <input class="radio__input" type="radio" name="radio1" />
-                <div class="radio__state">
-                  <div class="radio__control">
-                    <div class="radio__icon"></div>
+                </label>
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="radio1" />
+                  <div class="radio__state">
+                    <div class="radio__control">
+                      <div class="radio__icon"></div>
+                    </div>
+                    <div class="radio__label">Radio 2</div>
                   </div>
-                  <div class="radio__label">Radio 2</div>
-                </div>
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input" type="checkbox" checked />
-                <div class="checkbox__state">
-                  <div class="checkbox__control">
-                    <svg class="checkbox__icon">
-                      <use href="../../assets/images/icons.svg#check" />
-                    </svg>
+                </label>
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" checked />
+                  <div class="checkbox__state">
+                    <div class="checkbox__control">
+                      <svg class="checkbox__icon">
+                        <use href="../../assets/images/icons.svg#check" />
+                      </svg>
+                    </div>
+                    <div class="checkbox__label">Checkbox</div>
                   </div>
-                  <div class="checkbox__label">Checkbox</div>
-                </div>
-              </label>
+                </label>
+              </div>
             </div>
             <div class="card__footer">
               <div class="card__title">Custom form elements</div>
@@ -179,51 +192,53 @@
           </div>
           <div class="card">
             <div class="card__content">
-              <div class="calendar calendar_showcase">
-                <h5 class="calendar__month">
-                  October 2019
-                </h5>
-                <span class="calendar__day">Mon</span>
-                <span class="calendar__day">Tue</span>
-                <span class="calendar__day">Wed</span>
-                <span class="calendar__day">Thu</span>
-                <span class="calendar__day">Fri</span>
-                <span class="calendar__day">Sat</span>
-                <span class="calendar__day">Sun</span>
+              <div class="card__content-wrapper">
+                <div class="calendar calendar_showcase">
+                  <h5 class="calendar__month">
+                    October 2019
+                  </h5>
+                  <span class="calendar__day">Mon</span>
+                  <span class="calendar__day">Tue</span>
+                  <span class="calendar__day">Wed</span>
+                  <span class="calendar__day">Thu</span>
+                  <span class="calendar__day">Fri</span>
+                  <span class="calendar__day">Sat</span>
+                  <span class="calendar__day">Sun</span>
 
-                <div class="calendar__date calendar__date_start-5"><span class="calendar__date-text">1</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">2</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">3</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">4</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">5</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">6</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">7</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">8</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">9</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">10</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">11</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">12</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">13</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">14</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">15</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">16</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">17</span></div>
-                <div class="calendar__date calendar__date_selection-start"><span class="calendar__date-text">18</span>
+                  <div class="calendar__date calendar__date_start-5"><span class="calendar__date-text">1</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">2</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">3</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">4</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">5</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">6</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">7</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">8</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">9</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">10</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">11</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">12</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">13</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">14</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">15</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">16</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">17</span></div>
+                  <div class="calendar__date calendar__date_selection-start"><span class="calendar__date-text">18</span>
+                  </div>
+                  <div class="calendar__date calendar__date_selection"><span class="calendar__date-text">19</span></div>
+                  <div class="calendar__date calendar__date_selection"><span class="calendar__date-text">20</span></div>
+                  <div class="calendar__date calendar__date_selection"><span class="calendar__date-text">21</span></div>
+                  <div class="calendar__date calendar__date_selection"><span class="calendar__date-text">22</span></div>
+                  <div class="calendar__date calendar__date_selection-end"><span class="calendar__date-text">23</span>
+                  </div>
+                  <div class="calendar__date"><span class="calendar__date-text">24</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">25</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">26</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">27</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">28</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">29</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">30</span></div>
+                  <div class="calendar__date"><span class="calendar__date-text">31</span></div>
                 </div>
-                <div class="calendar__date calendar__date_selection"><span class="calendar__date-text">19</span></div>
-                <div class="calendar__date calendar__date_selection"><span class="calendar__date-text">20</span></div>
-                <div class="calendar__date calendar__date_selection"><span class="calendar__date-text">21</span></div>
-                <div class="calendar__date calendar__date_selection"><span class="calendar__date-text">22</span></div>
-                <div class="calendar__date calendar__date_selection-end"><span class="calendar__date-text">23</span>
-                </div>
-                <div class="calendar__date"><span class="calendar__date-text">24</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">25</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">26</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">27</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">28</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">29</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">30</span></div>
-                <div class="calendar__date"><span class="calendar__date-text">31</span></div>
               </div>
             </div>
             <div class="card__footer">
