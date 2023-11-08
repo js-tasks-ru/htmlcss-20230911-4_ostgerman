@@ -1,0 +1,91 @@
+.input {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input__container {
+  width: 100%;
+  position: relative;
+}
+
+.input__control {
+  width: 100%;
+  padding: 17px 24px 13px;
+  border-radius: 8px;
+  border: 1px var(--grey-2) solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--grey-4);
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 26px;
+  word-wrap: break-word;
+  transition: border-color .2s ease-in;
+}
+
+.input__label {
+  color: var(--grey-3);
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 18px;
+  letter-spacing: 0.48px;
+  word-wrap: break-word;
+}
+
+.input__control:focus {
+  outline: none;
+  border: 1px solid var(--blue);
+}
+
+.input_invalid .input__control:focus {
+  border: 1px solid var(--error);
+}
+
+.input__control::placeholder {
+  color: var(--grey-2);  
+}
+
+.input__icon-container {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+}
+
+.input__icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;  
+  display: none;
+}
+
+.input__icon_success {  
+  color: var(--success);  
+}
+
+.input__icon_error {  
+  color: var(--error);  
+}
+
+.input_invalid .input__icon_error {
+  display: block;
+}
+
+.input__control:disabled~.input__icon-container>.input__icon-error {
+  color: var(--grey-2);
+}
+
+.input_success .input__icon_success {
+  display: block;
+}
+
+.input__control:disabled~.input__icon-container>.input__icon-success {
+  color: var(--grey-2);
+}
