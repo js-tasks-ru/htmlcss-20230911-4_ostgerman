@@ -1,4 +1,4 @@
-.template {  
+.template {
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -13,22 +13,42 @@
 }
 
 .template__main {
+  background-color: var(--white);          
   grid-area: main;
-  overflow: auto;      
+  overflow: auto;
 }
 
-.template__main-inner {    
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-column-gap: 56px;
-  justify-items: stretch;  
+.template__main-inner {
+  width: 100%;
+  display: flex;  
+  gap: 56px;  
+  justify-content: flex-start;
 }
 
-.template__component {
-  background-color: var(--white);
-  border-radius: 12px;    
+.template__menu {
+  display: none;
+}
+
+.template__component {    
+  flex-grow: 1;
 }
 
 .template__footer {
   grid-area: footer;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .template__menu {
+    display: block;
+  }
+
+  .template__main {
+    background: none;
+  }
+
+  .template__component {     
+    border-radius: 12px;
+    background-color: var(--white);          
+  }
 }

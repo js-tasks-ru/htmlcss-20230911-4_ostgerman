@@ -8,6 +8,14 @@
 @import '../../components/showcase/showcase.css';
 @import '../../components/container/container.css';
 @import '../../components/card/card.css';
+@import '../../04-lection2/01-histogram/histogram.css';
+@import '../../05-lection3/01-tooltip/tooltip.css';
+@import '../../05-lection3/03-calendar/calendar.css';
+@import '../../05-lection3/02-modal/modal.css';
+@import '../../03-lection1/01-button/button.css';
+@import '../../06-lection4/01-avatar/avatar.css';
+@import '../../07-lection5/01-checkbox/checkbox.css';
+@import '../../07-lection5/02-radio/radio.css';
 
 :root {
   --white: #ffffff;
@@ -42,9 +50,7 @@
   --background: var(--white);
   --border: var(--grey-3);
   --caption: var(--grey-4);
-  --text: var(--black);
-  
-  --container-width: 1120px;
+  --text: var(--black);  
 }
 
 * {

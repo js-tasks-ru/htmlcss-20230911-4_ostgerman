@@ -1,10 +1,10 @@
-.footer {  
-  display: flex;
+.footer {
+  display: none;
   flex-direction: column;
   align-items: center;
 }
 
-.footer__inner {  
+.footer__inner {
   padding: 71px 0 136px;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   gap: 32px;
 }
 
-.footer__about {  
+.footer__about {
   margin: 0;
   font-family: Inter;
   font-size: 38px;
@@ -49,4 +49,12 @@
   line-height: 18px;
   letter-spacing: 0.48px;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .footer {
+    display: flex;
+  }
+
 }
