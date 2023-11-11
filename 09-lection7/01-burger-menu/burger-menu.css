@@ -1,0 +1,24 @@
+.burger-menu {
+  
+}
+
+.burger-menu__button {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.burger-menu__flyout {
+  background: #F9FAFC;  
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateX(-100vw);
+  transition: transform 300ms ease-in;
+}
+
+.burger-menu[data-open] .burger-menu__flyout {
+  transform: translateX(0);
+}

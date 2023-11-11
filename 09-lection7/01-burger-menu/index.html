@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
 
-    </body>
+<head>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="./burger-menu.css">
+  <script defer src="./burger-menu.js"></script>
+  <style>
+    .burger-menu-showcase {
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="burger-menu-showcase">
+    <div class="burger-menu" id="burger-menu">
+      <svg class="burger-menu__button" id="burger-menu-open">
+        <use href="../../assets/images/icons.svg#burger" />
+      </svg>
+      <div class="burger-menu__flyout">
+        <header class="header header_burger-menu">
+
+          <div class="header__top">
+            <a class="header__close-button" id="burger-menu-close">
+              <svg class="header__close-button-icon">
+                <use href="../../assets/images/icons.svg#close" />
+              </svg>
+            </a>
+            <div class="header__logo">
+              <svg class="header__logo-icon header__logo-icon_square">
+                <use href="../../assets/images/icons.svg#square" />
+              </svg>
+              <svg class="header__logo-icon header__logo-icon_circle">
+                <use href="../../assets/images/icons.svg#circle" />
+              </svg>
+              <svg class="header__logo-icon header__logo-icon_triangle">
+                <use href="../../assets/images/icons.svg#triangle" />
+              </svg>
+            </div>
+        </header>
+        <nav class="menu menu_burger">
+          <div class="menu__divider">
+          </div>
+          <h4 class="menu__header">Elements</h4>
+          <a class="menu__item" href="#">Modal</a>
+          <a class="menu__item" href="#">Tooltip</a>
+          <a class="menu__item" href="#">Avatar</a>
+          <a class="menu__item" href="#">Calendar</a>
+          <a class="menu__item menu__item_active" href="#">Histogram</a>
+          <a class="menu__item" href="#">Custom form elements</a>
+          <a class="menu__item" href="#">Main page</a>
+          <div class="menu__divider">
+          </div>
+          <h4 class="menu__header">Containers</h4>
+          <a class="menu__item" href="#">Modal</a>
+          <a class="menu__item" href="#">Tooltip</a>
+          <a class="menu__item" href="#">Avatar</a>
+          <a class="menu__item" href="#">Calendar</a>
+          <a class="menu__item" href="#">Custom form elements</a>
+          <a class="menu__item" href="#">Main page</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
