@@ -17,6 +17,20 @@
   justify-content: center;
 }
 
+.header__menu-button {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+
+.header__menu-button-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--black);
+}
+
 .header__close-button {
   background: var(--grey-2);
   width: 32px;
