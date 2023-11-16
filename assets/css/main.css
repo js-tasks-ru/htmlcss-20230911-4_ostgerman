@@ -16,6 +16,7 @@
 @import '../../06-lection4/01-avatar/avatar.css';
 @import '../../07-lection5/01-checkbox/checkbox.css';
 @import '../../07-lection5/02-radio/radio.css';
+@import '../../components/menu/menu.css';
 
 :root {
   --white: #ffffff;
@@ -31,6 +32,7 @@
   --grey-3: #ACB5BD;
   --grey-4: #495057;
 
+  --notification: var(--red);
   --error: var(--red);
   --success: var(--blue);
 

@@ -1,0 +1,29 @@
+.burger-menu {
+  background: #F9FAFC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateX(-100vw);
+}
+
+.burger-menu[data-open] {
+  animation: bounce-in-left 0.4s forwards;
+}
+
+@keyframes bounce-in-left {
+  60% {
+    transform: translateX(8vw);
+  }
+
+  80% {
+    transform: translateX(-2vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+  F
+}
