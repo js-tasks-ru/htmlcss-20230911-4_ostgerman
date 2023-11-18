@@ -1,8 +1,8 @@
 .calendar {
   min-width: 304px;
-  background: var(--white);
+  background: var(--background);
   border-radius: 8px;
-  border: 1px solid var(--grey-3);
+  border: 1px solid var(--border);
   padding: 28px 26px 32px;
   display: grid;
   grid-template-columns: repeat(7, minmax(36px, 1fr));
@@ -14,7 +14,7 @@
   justify-self: center;
   margin: 0;
   grid-area: 1 / 1 / 2 / 8;
-  color: #334D6E;
+  color: var(--caption);
   font-size: 20px;
   font-family: Inter;
   font-weight: 600;
@@ -42,7 +42,7 @@
 }
 
 .calendar__date-text {  
-  color: #334D6E;
+  color: var(--text-lighter);
   font-size: 16px;
   font-family: Source Sans 3;
   font-weight: 400;
@@ -57,7 +57,7 @@
 
 .calendar__date_selection-start .calendar__date-text,
 .calendar__date_selection-end .calendar__date-text{
-  color: var(--white);
+  color: var(--primary-text);
 }
 
 .calendar__date_selection {  

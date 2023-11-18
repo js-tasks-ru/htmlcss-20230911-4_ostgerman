@@ -16,10 +16,14 @@
 @import '../../06-lection4/01-avatar/avatar.css';
 @import '../../07-lection5/01-checkbox/checkbox.css';
 @import '../../07-lection5/02-radio/radio.css';
+@import '../../07-lection5/03-toggler/toggler.css';
 @import '../../components/menu/menu.css';
+@import '../../09-lection7/01-burger-menu/burger-menu.css';
 
 :root {
   --white: #ffffff;
+  --white75: #ffffff75;
+  --white50: #ffffff50;
   --black: #212429;
   --pink: #F784AD;
   --purple: #7048E8;
@@ -50,9 +54,18 @@
 
 
   --background: var(--white);
-  --border: var(--grey-3);
+  --background-main: var(--grey-1);
+  --border: var(--grey-2);
   --caption: var(--grey-4);
   --text: var(--black);  
+  --text-lighter: var(--grey-3);
+}
+
+html[data-theme-dark] {
+  --text: var(--white75);
+  --text-lighter: var(--white50);
+  --background: var(--black);
+  --background-main: var(--grey-4);
 }
 
 * {

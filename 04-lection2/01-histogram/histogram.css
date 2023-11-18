@@ -13,7 +13,7 @@
   padding: 16px 24px 24px;
   border: 1px solid var(--alternate-border);
   border-radius: 8px;
-  background: var(--white);
+  background: var(--background);
 }
 
 .histogram__legend {
@@ -28,7 +28,7 @@
 }
 
 .histogram__caption-text {
-  color: var(--black);
+  color: var(--text);
 
   font-family: Inter;
   font-size: 16px;
@@ -43,7 +43,7 @@
 
   margin: 0 0 6px;
 
-  color: var(--black);
+  color: var(--text);
   /* p */
   font-family: Inter;
   font-size: 20px;

@@ -1,5 +1,5 @@
 .showcase {
-  background: #F9FAFC;
+  background: var(--background-main);
   padding: 24px 0;
   flex-grow: 1;
 }

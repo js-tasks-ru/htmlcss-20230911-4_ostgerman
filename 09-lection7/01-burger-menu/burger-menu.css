@@ -1,11 +1,12 @@
 .burger-menu {
-  background: #F9FAFC;
+  background: var(--background-main);
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   transform: translateX(-100vw);
+  z-index: 10000;
 }
 
 .burger-menu[data-open] {
@@ -24,6 +25,11 @@
   100% {
     transform: translateX(0);
   }
+}
 
-  F
+@media only screen and (min-width: 768px) {
+
+  .burger-menu {
+    display: none;
+  }
 }

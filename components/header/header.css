@@ -13,7 +13,7 @@
 .header__top {
   position: relative;
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
 }
 
@@ -28,11 +28,11 @@
 .header__menu-button-icon {
   width: 24px;
   height: 24px;
-  color: var(--black);
+  color: var(--text);
 }
 
 .header__close-button {
-  background: var(--grey-2);
+  background: var(--text-lighter);
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -47,7 +47,7 @@
 .header__close-button-icon {
   width: 24px;
   height: 24px;
-  color: var(--black);
+  color: var(--text);
 }
 
 .header__logo {
@@ -58,7 +58,7 @@
 }
 
 .header__logo-icon {
-  color: var(--black);
+  color: var(--text);
 }
 
 .header__logo-icon_square {
@@ -85,7 +85,7 @@
 
 .header__menu-item {
   text-decoration: none;
-  color: var(--grey-3);
+  color: var(--text-lighter);
   font-size: 16px;
   font-family: Inter;
   font-weight: 400;
@@ -94,7 +94,29 @@
 }
 
 .header__menu-item_active {
-  color: var(--black);
+  color: var(--text);
+}
+
+.header__theme-switcher {
+  display: none;
+  align-items: center;
+  gap: 12px;
+  margin-left: 56px;
+}
+
+.header__theme-switcher-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--text-lighter);
+  transition: color .3s ease-in;
+}
+
+html:not([data-theme-dark]) .header__theme-switcher-icon_light {
+  color: var(--caption);
+}
+
+html[data-theme-dark] .header__theme-switcher-icon_dark {
+  color: var(--caption);
 }
 
 .header_template {
@@ -109,7 +131,7 @@
 
   .header__title {
     margin: 38px 0 40px;
-    color: var(--black);
+    color: var(--text);
     font-family: Inter;
     font-size: 50px;
     font-style: normal;
@@ -123,5 +145,13 @@
 
   .header__menu {
     display: flex;
+  }
+
+  .header__theme-switcher {
+    display: flex;
+  }
+
+  .header__menu-button {
+    display: none;
   }
 }
