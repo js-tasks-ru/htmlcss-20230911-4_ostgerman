@@ -111,14 +111,6 @@
   transition: color .3s ease-in;
 }
 
-html:not([data-theme-dark]) .header__theme-switcher-icon_light {
-  color: var(--caption);
-}
-
-html[data-theme-dark] .header__theme-switcher-icon_dark {
-  color: var(--caption);
-}
-
 .header_template {
   padding: 24px 0 60px;
 }
