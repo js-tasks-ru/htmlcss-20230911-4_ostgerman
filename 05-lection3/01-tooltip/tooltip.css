@@ -4,6 +4,7 @@
 }
 
 .tooltip__trigger {
+  color: var(--text);
   width: 24px;
   height: 24px;
 }
@@ -32,7 +33,7 @@
 }
 
 .tooltip__text {  
-  color: var(--grey-2);
+  color: var(--primary-text);
   font-size: 16px;
   font-family: Inter;
   font-weight: 400;

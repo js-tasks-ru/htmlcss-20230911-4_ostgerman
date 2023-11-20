@@ -4,6 +4,8 @@
 
 <head>
   <link rel="stylesheet" href="./assets/css/main.css">
+  <script defer src="10-lection8/01-theme-changer/theme-changer.js"></script>
+  <script defer src="09-lection7/01-burger-menu/burger-menu.js"></script>
 </head>
 
 <body>
@@ -11,16 +13,20 @@
     <header class="header header_page">
       <div class="container">
         <div class="header__top">
+          <a class="header__menu-button" id="burger-menu-open">
+            <svg class="header__menu-button-icon">
+              <use href="../../assets/images/icons.svg#burger" />
+            </svg>
+          </a>
           <div class="header__logo">
-            <!--TODO: make glyphs -->
-            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="30" height="30" fill="#212429" />
+            <svg class="header__logo-icon header__logo-icon_square">
+              <use href="../../assets/images/icons.svg#square" />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="32" height="32" rx="16" fill="#212429" />
+            <svg class="header__logo-icon header__logo-icon_circle">
+              <use href="../../assets/images/icons.svg#circle" />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0L32 32H0V0Z" fill="#212429" />
+            <svg class="header__logo-icon header__logo-icon_triangle">
+              <use href="../../assets/images/icons.svg#triangle" />
             </svg>
           </div>
           <nav class="header__menu">
@@ -28,10 +34,83 @@
             <a class="header__menu-item" href="#">About</a>
             <a class="header__menu-item" href="#">Contact</a>
           </nav>
+          <div class="header__theme-switcher">
+            <svg class="header__theme-switcher-icon header__theme-switcher-icon_light">
+              <use href="../../assets/images/icons.svg#sun" />
+            </svg>
+            <label class="toggler">
+              <input class="toggler__input" type="checkbox" data-theme-changer />
+              <div class="toggler__state">
+                <div class="toggler__control">
+                  <span class="toggler__icon">
+                  </span>
+                </div>
+              </div>
+            </label>
+            <svg class="header__theme-switcher-icon header__theme-switcher-icon_dark">
+              <use href="../../assets/images/icons.svg#moon" />
+            </svg>
+          </div>
         </div>
         <h1 class="header__title">Reusable component library</h1>
       </div>
     </header>
+    <div class="burger-menu" id="burger-menu">
+      <header class="header header_burger-menu">
+        <div class="header__top">
+          <a class="header__close-button" id="burger-menu-close">
+            <svg class="header__close-button-icon">
+              <use href="../../assets/images/icons.svg#close" />
+            </svg>
+          </a>
+          <div class="header__logo">
+            <svg class="header__logo-icon header__logo-icon_square">
+              <use href="../../assets/images/icons.svg#square" />
+            </svg>
+            <svg class="header__logo-icon header__logo-icon_circle">
+              <use href="../../assets/images/icons.svg#circle" />
+            </svg>
+            <svg class="header__logo-icon header__logo-icon_triangle">
+              <use href="../../assets/images/icons.svg#triangle" />
+            </svg>
+          </div>
+      </header>
+      <nav class="menu menu_burger">
+        <div class="menu__divider">
+        </div>
+        <div class="menu__theme">
+          <span class="menu__item">Dark mode</span>  
+          <label class="toggler">
+            <input class="toggler__input" type="checkbox" data-theme-changer />
+            <div class="toggler__state">
+              <div class="toggler__control">
+                <span class="toggler__icon">
+                </span>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="menu__divider">
+        </div>
+        <h4 class="menu__header">Elements</h4>
+        <a class="menu__item" href="#">Modal</a>
+        <a class="menu__item" href="#">Tooltip</a>
+        <a class="menu__item" href="#">Avatar</a>
+        <a class="menu__item" href="#">Calendar</a>
+        <a class="menu__item menu__item_active" href="#">Histogram</a>
+        <a class="menu__item" href="#">Custom form elements</a>
+        <a class="menu__item" href="#">Main page</a>
+        <div class="menu__divider">
+        </div>
+        <h4 class="menu__header">Containers</h4>
+        <a class="menu__item" href="#">Modal</a>
+        <a class="menu__item" href="#">Tooltip</a>
+        <a class="menu__item" href="#">Avatar</a>
+        <a class="menu__item" href="#">Calendar</a>
+        <a class="menu__item" href="#">Custom form elements</a>
+        <a class="menu__item" href="#">Main page</a>
+      </nav>
+    </div>
     <main class="showcase">
       <div class="container">
         <article class="showcase__inner">
@@ -91,41 +170,27 @@
                   <div class="histogram__legend">
                     <div class="histogram__caption">
                       <span class="histogram__caption-text">Total orders</span>
-                      <span class="historgram__caption-value">50254</span>
+                      <span class="histogram__caption-value">50254</span>
                     </div>
                     <span class="histogram__link" href="#">View all</span>
                   </div>
                   <div class="histogram__figure">
-                    <div class="histogram__bar histogram__bar_100"></div>
-                    <div class="histogram__bar histogram__bar_15"></div>
-                    <div class="histogram__bar histogram__bar_80"></div>
-                    <div class="histogram__bar histogram__bar_65"></div>
-                    <div class="histogram__bar histogram__bar_90"></div>
-                    <div class="histogram__bar histogram__bar_10"></div>
-                    <div class="histogram__bar histogram__bar_20"></div>
-                    <div class="histogram__bar histogram__bar_10"></div>
-                    <div class="histogram__bar histogram__bar_45"></div>
-                    <div class="histogram__bar histogram__bar_15"></div>
-                    <div class="histogram__bar histogram__bar_60"></div>
-                    <div class="histogram__bar histogram__bar_100"></div>
-                    <div class="histogram__bar histogram__bar_95"></div>
-                    <div class="histogram__bar histogram__bar_45"></div>
-                    <div class="histogram__bar histogram__bar_60"></div>
-                    <div class="histogram__bar histogram__bar_70"></div>
-                    <div class="histogram__bar histogram__bar_75"></div>
-                    <div class="histogram__bar histogram__bar_20"></div>
-                    <div class="histogram__bar histogram__bar_25"></div>
-                    <div class="histogram__bar histogram__bar_30"></div>
-                    <div class="histogram__bar histogram__bar_75"></div>
-                    <div class="histogram__bar histogram__bar_80"></div>
-                    <div class="histogram__bar histogram__bar_10"></div>
-                    <div class="histogram__bar histogram__bar_100"></div>
-                    <div class="histogram__bar histogram__bar_25"></div>
-                    <div class="histogram__bar histogram__bar_10"></div>
-                    <div class="histogram__bar histogram__bar_55"></div>
-                    <div class="histogram__bar histogram__bar_15"></div>
-                    <div class="histogram__bar histogram__bar_90"></div>
-                    <div class="histogram__bar histogram__bar_10"></div>
+                    <div class="histogram__figure-inner">
+                      <div class="histogram__bar histogram__bar_10"></div>
+                      <div class="histogram__bar histogram__bar_15"></div>
+                      <div class="histogram__bar histogram__bar_80"></div>
+                      <div class="histogram__bar histogram__bar_65"></div>
+                      <div class="histogram__bar histogram__bar_90"></div>
+                      <div class="histogram__bar histogram__bar_10"></div>
+                      <div class="histogram__bar histogram__bar_100"></div>
+                      <div class="histogram__bar histogram__bar_20"></div>
+                      <div class="histogram__bar histogram__bar_45"></div>
+                      <div class="histogram__bar histogram__bar_65"></div>
+                      <div class="histogram__bar histogram__bar_60"></div>
+                      <div class="histogram__bar histogram__bar_100"></div>
+                      <div class="histogram__bar histogram__bar_95"></div>
+                      <div class="histogram__bar histogram__bar_45"></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -179,6 +244,7 @@
                       <svg class="checkbox__icon">
                         <use href="../../assets/images/icons.svg#check" />
                       </svg>
+                      <div class="checkbox__overlay"></div>
                     </div>
                     <div class="checkbox__label">Checkbox</div>
                   </div>

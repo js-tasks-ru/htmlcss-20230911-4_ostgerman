@@ -2,6 +2,7 @@
   display: none;
   flex-direction: column;
   align-items: center;
+  background: var(--background);
 }
 
 .footer__inner {
@@ -14,6 +15,7 @@
 }
 
 .footer__about {
+  color: var(--text);
   margin: 0;
   font-family: Inter;
   font-size: 38px;
@@ -25,7 +27,7 @@
 .footer__description {
   max-width: 640px;
   margin: 0 auto;
-  color: var(--black);
+  color: var(--text);
   text-align: center;
   /* p */
   font-family: Inter;
@@ -41,7 +43,7 @@
 }
 
 .footer_template .footer__about {
-  color: var(--grey-3);
+  color: var(--text-lighter);
   font-family: Inter;
   font-size: 12px;
   font-style: normal;

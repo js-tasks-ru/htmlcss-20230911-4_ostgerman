@@ -15,7 +15,7 @@
 .modal__popup {
   width: 428px;
   border-radius: 8px;
-  background: var(--white);
+  background: var(--background);
   padding: 30px 40px 33px;
   position: absolute;
   top: 50%;
@@ -24,6 +24,7 @@
 }
 
 .modal__close {
+  color: var(--text);
   position: absolute;
   right: 12px;
   top: 12px;
@@ -33,7 +34,7 @@
 
 .modal__title {
   margin: 0;
-  color: #334D6E;
+  color: var(--text-lighter);
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -43,7 +44,7 @@
 
 .modal__text {
   margin: 14px 0 0;
-  color: var(--grey4);
+  color: var(--text);
   font-family: Inter;
   font-size: 16px;
   font-style: normal;

@@ -3,7 +3,7 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
-  background-color: #F9FAFC;
+  background-color: var(--background-main);
   align-items: stretch;
   justify-content: stretch;
 }
@@ -13,7 +13,7 @@
 }
 
 .template__main {
-  background-color: var(--white);          
+  background-color: var(--background);          
   grid-area: main;
   overflow: auto;
 }
@@ -49,6 +49,6 @@
 
   .template__component {     
     border-radius: 12px;
-    background-color: var(--white);          
+    background-color: var(--background);          
   }
 }

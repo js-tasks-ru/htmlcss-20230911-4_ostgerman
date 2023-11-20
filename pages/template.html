@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="../components/template/template.css">
   <link rel="stylesheet" href="../components/header/header.css">
   <link rel="stylesheet" href="../components/menu/menu.css">
+  <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
+  <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
   <title>Template</title>
 </head>
 
@@ -15,16 +17,20 @@
       <header class="header header_template">
         <div class="container">
           <div class="header__top">
+            <a class="header__menu-button" id="burger-menu-open">
+              <svg class="header__menu-button-icon">
+                <use href="../../assets/images/icons.svg#burger" />
+              </svg>
+            </a>
             <div class="header__logo">
-              <!--TODO: make glyphs -->
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="30" height="30" fill="#212429" />
+              <svg class="header__logo-icon header__logo-icon_square">
+                <use href="../../assets/images/icons.svg#square" />
               </svg>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="32" height="32" rx="16" fill="#212429" />
+              <svg class="header__logo-icon header__logo-icon_circle">
+                <use href="../../assets/images/icons.svg#circle" />
               </svg>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0L32 32H0V0Z" fill="#212429" />
+              <svg class="header__logo-icon header__logo-icon_triangle">
+                <use href="../../assets/images/icons.svg#triangle" />
               </svg>
             </div>
             <nav class="header__menu">
@@ -32,9 +38,82 @@
               <a class="header__menu-item" href="#">About</a>
               <a class="header__menu-item" href="#">Contact</a>
             </nav>
+            <div class="header__theme-switcher">
+              <svg class="header__theme-switcher-icon header__theme-switcher-icon_light">
+                <use href="../../assets/images/icons.svg#sun" />
+              </svg>
+              <label class="toggler">
+                <input class="toggler__input" type="checkbox" data-theme-changer />
+                <div class="toggler__state">
+                  <div class="toggler__control">
+                    <span class="toggler__icon">
+                    </span>
+                  </div>
+                </div>
+              </label>
+              <svg class="header__theme-switcher-icon header__theme-switcher-icon_dark">
+                <use href="../../assets/images/icons.svg#moon" />
+              </svg>
+            </div>          
           </div>
         </div>
       </header>
+    </div>
+    <div class="burger-menu" id="burger-menu">
+      <header class="header header_burger-menu">
+        <div class="header__top">
+          <a class="header__close-button" id="burger-menu-close">
+            <svg class="header__close-button-icon">
+              <use href="../../assets/images/icons.svg#close" />
+            </svg>
+          </a>
+          <div class="header__logo">
+            <svg class="header__logo-icon header__logo-icon_square">
+              <use href="../../assets/images/icons.svg#square" />
+            </svg>
+            <svg class="header__logo-icon header__logo-icon_circle">
+              <use href="../../assets/images/icons.svg#circle" />
+            </svg>
+            <svg class="header__logo-icon header__logo-icon_triangle">
+              <use href="../../assets/images/icons.svg#triangle" />
+            </svg>
+          </div>
+      </header>
+      <nav class="menu menu_burger">
+        <div class="menu__divider">
+        </div>
+        <div class="menu__theme">
+          <span class="menu__item">Dark mode</span>  
+          <label class="toggler">
+            <input class="toggler__input" type="checkbox" data-theme-changer />
+            <div class="toggler__state">
+              <div class="toggler__control">
+                <span class="toggler__icon">
+                </span>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="menu__divider">
+        </div>
+        <h4 class="menu__header">Elements</h4>
+        <a class="menu__item" href="#">Modal</a>
+        <a class="menu__item" href="#">Tooltip</a>
+        <a class="menu__item" href="#">Avatar</a>
+        <a class="menu__item" href="#">Calendar</a>
+        <a class="menu__item menu__item_active" href="#">Histogram</a>
+        <a class="menu__item" href="#">Custom form elements</a>
+        <a class="menu__item" href="#">Main page</a>
+        <div class="menu__divider">
+        </div>
+        <h4 class="menu__header">Containers</h4>
+        <a class="menu__item" href="#">Modal</a>
+        <a class="menu__item" href="#">Tooltip</a>
+        <a class="menu__item" href="#">Avatar</a>
+        <a class="menu__item" href="#">Calendar</a>
+        <a class="menu__item" href="#">Custom form elements</a>
+        <a class="menu__item" href="#">Main page</a>
+      </nav>
     </div>
     <div class="template__main">
       <div class="container">
